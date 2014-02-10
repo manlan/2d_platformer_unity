@@ -1,0 +1,1597 @@
+fileFormatVersion: 2
+guid: 1a3b63299fce0e946b5f8aca217615b5
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 400
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Fluppit_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 3936
+        width: 148
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_1
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 3936
+        width: 144
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 3936
+        width: 148
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_3
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 3932
+        width: 148
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_4
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 3932
+        width: 148
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_5
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 3928
+        width: 144
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_6
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 3932
+        width: 148
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_7
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 3936
+        width: 148
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_8
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 3936
+        width: 144
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_9
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 3936
+        width: 144
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3692
+        width: 152
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_21
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 3684
+        width: 152
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_22
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 3660
+        width: 152
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_23
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 3628
+        width: 156
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_24
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 3628
+        width: 172
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_25
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3628
+        width: 184
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_26
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 3628
+        width: 192
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_27
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 3628
+        width: 192
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_28
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 3628
+        width: 196
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_29
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 3628
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_30
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 3628
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_31
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 3628
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_32
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 3396
+        width: 204
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_33
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 3396
+        width: 204
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_34
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 3396
+        width: 204
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_35
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3396
+        width: 204
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_36
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 3396
+        width: 204
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_37
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 3396
+        width: 192
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_38
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 3396
+        width: 180
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_39
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 3396
+        width: 168
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_40
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 3396
+        width: 152
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3184
+        width: 160
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_42
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 3216
+        width: 136
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_43
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 3224
+        width: 132
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_44
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 3244
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_45
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 3248
+        width: 148
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_46
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 3248
+        width: 148
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_47
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 3244
+        width: 148
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_48
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 3232
+        width: 148
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_49
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 3228
+        width: 144
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_50
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 3236
+        width: 148
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_51
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 3164
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_52
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 3164
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_53
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 3164
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_54
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 3164
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_55
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 3164
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_56
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 3164
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_57
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 3164
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_58
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 3164
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_59
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 3164
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_60
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 3164
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_61
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 3000
+        width: 144
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_62
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 3000
+        width: 144
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_63
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 3004
+        width: 144
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_64
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 3004
+        width: 148
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_65
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 3000
+        width: 148
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_66
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 2996
+        width: 148
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_67
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 2996
+        width: 144
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_68
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 2996
+        width: 148
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_69
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 3000
+        width: 148
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_70
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 3000
+        width: 144
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_71
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2928
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_72
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 2928
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_73
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 2928
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_74
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 2928
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_75
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 2928
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_76
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 2928
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_77
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 2928
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_78
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 2928
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_79
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 2928
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_80
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 2928
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_81
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2768
+        width: 148
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_82
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 2768
+        width: 144
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_83
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2748
+        width: 148
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_84
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 2728
+        width: 148
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_85
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2696
+        width: 148
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_86
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 2688
+        width: 144
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_87
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 2688
+        width: 148
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_88
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 2696
+        width: 156
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_89
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 2696
+        width: 160
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_90
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 2696
+        width: 168
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_91
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2696
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_92
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 2696
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_93
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 2696
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_94
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 2696
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_95
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 2456
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_96
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 2456
+        width: 148
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_97
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2456
+        width: 148
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_98
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 2456
+        width: 148
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_99
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2456
+        width: 144
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_100
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 2456
+        width: 148
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_101
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 2456
+        width: 148
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_102
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 2456
+        width: 144
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_103
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 2456
+        width: 148
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_104
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 2456
+        width: 144
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_105
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2224
+        width: 148
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_106
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 2224
+        width: 148
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_107
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2220
+        width: 148
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_108
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 2221
+        width: 144
+        height: 223
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Fluppit_109
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2223
+        width: 148
+        height: 217
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Fluppit_110
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 2226
+        width: 148
+        height: 174
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Fluppit_111
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 2226
+        width: 144
+        height: 174
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Fluppit_112
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 2296
+        width: 144
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_113
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 2296
+        width: 144
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_114
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 2296
+        width: 148
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_123
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2060
+        width: 148
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_124
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 2048
+        width: 144
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_125
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 2044
+        width: 136
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_126
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2044
+        width: 140
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_127
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 2040
+        width: 136
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_128
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 2040
+        width: 132
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_129
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 2040
+        width: 128
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_130
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 2044
+        width: 148
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_131
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 2060
+        width: 156
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_132
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 2068
+        width: 152
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_143
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1840
+        width: 148
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_144
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1844
+        width: 144
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_145
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1844
+        width: 140
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_146
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1840
+        width: 136
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_147
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1824
+        width: 132
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_148
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1820
+        width: 140
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_149
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1824
+        width: 144
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_150
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 1824
+        width: 144
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_151
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 1816
+        width: 152
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_152
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 1804
+        width: 152
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_153
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1756
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_154
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1756
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_155
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1756
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_156
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1756
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_157
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1744
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_158
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 1744
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_159
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 1756
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_160
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1756
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_161
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 1756
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_162
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 1756
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_163
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1544
+        width: 152
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_164
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1512
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_165
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1512
+        width: 172
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_166
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1512
+        width: 184
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_167
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1512
+        width: 192
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_168
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1512
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_169
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 1512
+        width: 192
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_170
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1512
+        width: 204
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_171
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 1584
+        width: 148
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_172
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1512
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_173
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1512
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_174
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1352
+        width: 144
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_175
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1352
+        width: 148
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_176
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1348
+        width: 148
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_177
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1344
+        width: 148
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_178
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1344
+        width: 144
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_179
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1348
+        width: 148
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_180
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1348
+        width: 144
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_181
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1352
+        width: 144
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_182
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 1352
+        width: 148
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_183
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 1348
+        width: 148
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_184
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1276
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_185
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1276
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_186
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1276
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_187
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1276
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_188
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1276
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_189
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 1276
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_190
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 1276
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_191
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1276
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_192
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 1276
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_193
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 1276
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_194
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1112
+        width: 148
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_195
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1116
+        width: 148
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_196
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1116
+        width: 144
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_197
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1044
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_198
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1044
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Fluppit_199
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1044
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
