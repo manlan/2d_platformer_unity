@@ -12,10 +12,11 @@ public class CharacterSwap : MonoBehaviour {
 	private int currentCharacterID;
 	private Transform cam;
 	private CameraFollow camFollow;
-
+	private BaseManager bm;
 
 	void Awake() {
 
+		this.bm = GetComponent<BaseManager>();
 		this.cam = Camera.main.transform;
 		this.camFollow = cam.GetComponent<CameraFollow>();
 		this.currentCharacterID = 0;
@@ -50,7 +51,7 @@ public class CharacterSwap : MonoBehaviour {
 
 		this.camFollow.FollowPlayer();
 		GameObject swapExplosion = Instantiate(this.explosion, currentCharPosition, Quaternion.identity) as GameObject;		
-		this.audio.Play ();
+		AudioHelper.CreatePlayAudioObject(BaseManager.instance.characterSwap, .5f);
 		yield return new WaitForSeconds(1.25f);
 		Destroy(swapExplosion);
 

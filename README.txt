@@ -1,1 +1,1 @@
-Personal Test Project testing the Unity Engine and interface - feel free to ping me any coding suggestions or advice @ raz@hush.com
+Personal Test Project testing the Unity Engine and interface - feel free to ping me any suggestions @ notsoobvious@nym.hush.com
