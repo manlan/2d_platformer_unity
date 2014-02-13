@@ -12,11 +12,11 @@ public class CharacterSwap : MonoBehaviour {
 	private int currentCharacterID;
 	private Transform cam;
 	private CameraFollow camFollow;
-	private BaseManager bm;
+//	private BaseManager bm;
 
 	void Awake() {
 
-		this.bm = GetComponent<BaseManager>();
+//		this.bm = GetComponent<BaseManager>();
 		this.cam = Camera.main.transform;
 		this.camFollow = cam.GetComponent<CameraFollow>();
 		this.currentCharacterID = 0;

@@ -5,7 +5,7 @@ using System.Collections;
 public class CameraFollow : MonoBehaviour 
 {
 	public float xGrace = 1f;		// Distance player can move before the camera follows.
-	public float yGrace = 1f;		// ""
+	public float yGrace = 2f;		// ""
 	public float xAccel = 2f;		// How quickly the camera accelerates to catch the player
 	public float yAccel = 2f;		// ""
 	public Vector2 maxXAndY;		// The maximum x and y coordinates the camera can have.

@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CharacterSwap.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\LinearMoveThenDestroy.cs" />
      <Compile Include="Assets\Scripts\MainSceneManager.cs" />
      <Compile Include="Assets\Scripts\ParallaxScrolling.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
