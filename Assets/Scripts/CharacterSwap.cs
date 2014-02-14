@@ -3,22 +3,27 @@ using System.Collections;
 
 public class CharacterSwap : MonoBehaviour {
 
+	//the intermediary swap explosion
 	public GameObject explosion;
+	//the keypress as chosen via the inspector
 	public KeyCode swapKey;
+	//allow some grace before next swap
 	public float timeBeforeNextSwap;
+	//the actual character list array
 	public GameObject[] characters;
 
 	private GameObject currentCharacter;
 	private int currentCharacterID;
 	private Transform cam;
 	private CameraFollow camFollow;
-//	private BaseManager bm;
+
 
 	void Awake() {
 
-//		this.bm = GetComponent<BaseManager>();
+		//this script will destroy the character and instantiate the next one so we need to tell this new info to the main cam
 		this.cam = Camera.main.transform;
 		this.camFollow = cam.GetComponent<CameraFollow>();
+		//we track current character via an ID
 		this.currentCharacterID = 0;
 
 		Vector3 characterPosition = new Vector3(this.cam.position.x, this.cam.position.y, 0);
@@ -68,7 +73,8 @@ public class CharacterSwap : MonoBehaviour {
 			break;
 		}
 
-		yield return StartCoroutine(this.camFollow.SetNewPlayer(newCurrentChar.name));
+//		yield return StartCoroutine(this.camFollow.SetNewPlayer(newCurrentChar.name));
+		this.camFollow.SetNewPlayer(newCurrentChar.name);
 
 		this.camFollow.FollowPlayer();
 

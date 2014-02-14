@@ -180,7 +180,7 @@ TextureImporter:
         height: 69
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_15
+    - name: white coin
       rect:
         serializedVersion: 2
         x: 301
@@ -252,7 +252,7 @@ TextureImporter:
         height: 26
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_23
+    - name: mushroom brown
       rect:
         serializedVersion: 2
         x: 441
@@ -288,7 +288,7 @@ TextureImporter:
         height: 26
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_27
+    - name: yellow coin
       rect:
         serializedVersion: 2
         x: 230
@@ -315,7 +315,7 @@ TextureImporter:
         height: 36
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_30
+    - name: mushroom
       rect:
         serializedVersion: 2
         x: 441
@@ -369,7 +369,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_36
+    - name: brush
       rect:
         serializedVersion: 2
         x: 19
@@ -387,7 +387,7 @@ TextureImporter:
         height: 41
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_38
+    - name: star yellow
       rect:
         serializedVersion: 2
         x: 160
@@ -414,7 +414,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_41
+    - name: yellow ! box brown border
       rect:
         serializedVersion: 2
         x: 355
@@ -423,7 +423,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_42
+    - name: dirt box
       rect:
         serializedVersion: 2
         x: 426
@@ -459,7 +459,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_46
+    - name: water box
       rect:
         serializedVersion: 2
         x: 710
@@ -513,7 +513,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_52
+    - name: yellow ! box
       rect:
         serializedVersion: 2
         x: 284
@@ -522,7 +522,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_53
+    - name: platform
       rect:
         serializedVersion: 2
         x: 355
@@ -531,7 +531,7 @@ TextureImporter:
         height: 20
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_54
+    - name: platform round
       rect:
         serializedVersion: 2
         x: 426
@@ -594,13 +594,13 @@ TextureImporter:
         height: 35
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_61
+    - name: yellow box ring brown border
       rect:
         serializedVersion: 2
         x: 71
         y: 360
         width: 70
-        height: 141
+        height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: tiles_spritesheet_62
@@ -666,7 +666,7 @@ TextureImporter:
         height: 45
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_69
+    - name: water rounded
       rect:
         serializedVersion: 2
         x: 639
@@ -693,7 +693,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_72
+    - name: weight2
       rect:
         serializedVersion: 2
         x: 2
@@ -756,7 +756,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_79
+    - name: water pointy
       rect:
         serializedVersion: 2
         x: 568
@@ -1098,7 +1098,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_117
+    - name: hill smile large
       rect:
         serializedVersion: 2
         x: 710
@@ -1107,7 +1107,7 @@ TextureImporter:
         height: 146
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_118
+    - name: hill smile small
       rect:
         serializedVersion: 2
         x: 759
@@ -1197,7 +1197,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_128
+    - name: hill large
       rect:
         serializedVersion: 2
         x: 639
@@ -1206,7 +1206,7 @@ TextureImporter:
         height: 146
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: tiles_spritesheet_129
+    - name: hill small
       rect:
         serializedVersion: 2
         x: 759
@@ -1321,6 +1321,15 @@ TextureImporter:
         y: 46
         width: 19
         height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: weight1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 431
+        width: 66
+        height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
   spritePackingTag: 

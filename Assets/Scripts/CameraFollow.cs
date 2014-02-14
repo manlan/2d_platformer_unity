@@ -49,10 +49,6 @@ public class CameraFollow : MonoBehaviour
 
 	}
 
-	public void FollowPlayer() {
-
-		this.followSwitch = !this.followSwitch;
-	}
 
 	void TrackPlayer ()
 	{
@@ -79,11 +75,15 @@ public class CameraFollow : MonoBehaviour
 		// Set the camera's position to the target position with the same z component.
 		this.transform.position = new Vector3(targetX, targetY, transform.position.z);
 	}
+	public void FollowPlayer() {
+		
+		this.followSwitch = !this.followSwitch;
+	}
 
-	public IEnumerator SetNewPlayer(String newPlayer) {
+	public void SetNewPlayer(String newPlayerName) {
 
-		this.player = GameObject.Find(newPlayer);
-		yield return new WaitForSeconds(.1f);
+		this.player = GameObject.Find(newPlayerName);
+//		yield return new WaitForSeconds(.1f);
 //		Debug.Log (this.player.name);
 	}
 }
