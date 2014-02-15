@@ -18,7 +18,6 @@ public class CameraFollow : MonoBehaviour
 	void Start ()
 	{
 		// Setting up the reference.
-		this.player = GameObject.FindGameObjectWithTag("Player");
 		StartCoroutine(CoUpdate());
 	}
 
@@ -39,14 +38,16 @@ public class CameraFollow : MonoBehaviour
 
 	IEnumerator CoUpdate ()
 	{
+		yield return new WaitForEndOfFrame();
+		this.player = GameObject.FindGameObjectWithTag("Player");
 		while (true) {
-			if(followSwitch) {
+
+			if (followSwitch) {
+
 				TrackPlayer(); 	
 			}
 			yield return null;
-			}
-
-
+		}
 	}
 
 

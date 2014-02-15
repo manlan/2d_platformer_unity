@@ -25,14 +25,15 @@ public class CharacterSwap : MonoBehaviour {
 		this.camFollow = cam.GetComponent<CameraFollow>();
 		//we track current character via an ID
 		this.currentCharacterID = 0;
-
-		Vector3 characterPosition = new Vector3(this.cam.position.x, this.cam.position.y, 0);
-		this.currentCharacter = Instantiate(this.characters[this.currentCharacterID], characterPosition, Quaternion.identity) as GameObject;
 	}
 
 	void Start () {
 
 		this.StartCoroutine(CheckSwapChars());
+		Vector3 characterPosition = new Vector3(this.cam.position.x, this.cam.position.y, 0);
+		//		this.currentCharacter = Instantiate(this.characters[this.currentCharacterID], characterPosition, Quaternion.identity) as GameObject;
+		this.currentCharacter = ObjectPool.instance.GetObjectForType("Character", true);
+		this.currentCharacter.transform.position = characterPosition;
 	}
 
 	IEnumerator CheckSwapChars() {
@@ -51,34 +52,53 @@ public class CharacterSwap : MonoBehaviour {
 	IEnumerator SwapCharacters () {
 
 		Vector3 currentCharPosition = this.currentCharacter.transform.position;
-		this.currentCharacter.renderer.enabled = false;
-		this.currentCharacterID++;
 
 		this.camFollow.FollowPlayer();
-		GameObject swapExplosion = Instantiate(this.explosion, currentCharPosition, Quaternion.identity) as GameObject;		
-		AudioHelper.CreatePlayAudioObject(BaseManager.instance.characterSwap, .5f);
-		yield return new WaitForSeconds(1.25f);
-		Destroy(swapExplosion);
 
+//		this.currentCharacter.renderer.enabled = false;
+		ObjectPool.instance.PoolObject(this.currentCharacter);
+
+//		GameObject swapExplosion = Instantiate(this.explosion, currentCharPosition, Quaternion.identity) as GameObject;		
+
+
+		GameObject swapExplosion = ObjectPool.instance.GetObjectForType ("Player Explosion", true);
+		swapExplosion.transform.position = currentCharPosition;
+
+		AudioHelper.CreatePlayAudioObject(BaseManager.instance.characterSwap, .5f);
+
+		yield return new WaitForSeconds(1.25f);
+
+//		Destroy(swapExplosion);
+		ObjectPool.instance.PoolObject(swapExplosion);
+
+		this.currentCharacterID++;
 		GameObject newCurrentChar;
+
 		switch (this.currentCharacterID) {
-			case 0: newCurrentChar = Instantiate(this.characters[0], currentCharPosition, Quaternion.identity) as GameObject;
+//			case 0: newCurrentChar = Instantiate(this.characters[0], currentCharPosition, Quaternion.identity) as GameObject;
+			case 0: newCurrentChar = ObjectPool.instance.GetObjectForType(this.characters[0].name, true);
+			newCurrentChar.transform.position = currentCharPosition;
 			break;
-			case 1: newCurrentChar = Instantiate(this.characters[1], currentCharPosition, Quaternion.identity) as GameObject;
+//			case 1: newCurrentChar = Instantiate(this.characters[1], currentCharPosition, Quaternion.identity) as GameObject;
+			case 1: newCurrentChar = ObjectPool.instance.GetObjectForType(this.characters[1].name, true);
+			newCurrentChar.transform.position = currentCharPosition;
 			break;
-			case 2: newCurrentChar = Instantiate(this.characters[2], currentCharPosition, Quaternion.identity) as GameObject;
+//			case 2: newCurrentChar = Instantiate(this.characters[2], currentCharPosition, Quaternion.identity) as GameObject;
+			case 2: newCurrentChar = ObjectPool.instance.GetObjectForType(this.characters[2].name, true);
+			newCurrentChar.transform.position = currentCharPosition;
 			break;
 			default: this.currentCharacterID = 0;
-			newCurrentChar = Instantiate(this.characters[0], currentCharPosition, Quaternion.identity) as GameObject;
+//			newCurrentChar = Instantiate(this.characters[0], currentCharPosition, Quaternion.identity) as GameObject;
+			newCurrentChar = ObjectPool.instance.GetObjectForType(this.characters[0].name, true);
+			newCurrentChar.transform.position = currentCharPosition;
 			break;
 		}
 
 //		yield return StartCoroutine(this.camFollow.SetNewPlayer(newCurrentChar.name));
 		this.camFollow.SetNewPlayer(newCurrentChar.name);
-
 		this.camFollow.FollowPlayer();
 
-		Destroy(this.currentCharacter);
+//		Destroy(this.currentCharacter);
 		this.currentCharacter = GameObject.Find(newCurrentChar.name);
 	}
 }
