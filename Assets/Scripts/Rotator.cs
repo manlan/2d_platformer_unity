@@ -3,15 +3,17 @@ using System.Collections;
 
 public class Rotator : MonoBehaviour {
 
-	public float speed = 1;
-	// Use this for initialization
+	public int speed;
+
 	void Start () {
 	
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-	
-		this.transform.Rotate(Vector3.up * this.speed * Time.deltaTime);
+
+		foreach (Transform childTransforms in this.transform) {
+
+			childTransforms.transform.Rotate(Vector3.up * this.speed * Time.deltaTime);
+		}
 	}
 }

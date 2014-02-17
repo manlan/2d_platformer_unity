@@ -1,28 +1,22 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Rotator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerAbilityAimer.cs">
     <Files>
-      <File FileName="Assets\Scripts\DestroyOnEnterAndRespawn.cs" Line="45" Column="61" />
-      <File FileName="Assets\Scripts\Rotator.cs" Line="15" Column="35" />
-      <File FileName="Assets\Scripts\LinearMoveThenDestroy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ParallaxScrolling.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Audio\BaseManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CharacterSwap.cs" Line="85" Column="10" />
-      <File FileName="Assets\Scripts\MainSceneManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Audio\AudioHelper.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CharacterSwap.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerAbilityAimer.cs" Line="57" Column="19" />
+      <File FileName="..\unity_official_2d_platformer\Assets\Scripts\PlayerControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BackgroundParallax.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CameraFollow.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ObjectPool.cs" Line="63" Column="2" />
+      <File FileName="Assets\Scripts\RotatorForManyHierarchies.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Rotator.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ObjectPool.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MainSceneManager.cs" Line="14" Column="1" />
+      <File FileName="Assets\Scripts\Audio\BaseManager.cs" Line="21" Column="33" />
+      <File FileName="Assets\Scripts\DestroyOnEnterAndRespawn.cs" Line="1" Column="1" />
     </Files>
     <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Assembly-CSharp" expanded="True">
-            <Node name="Scripts" expanded="True">
-              <Node name="Rotator.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

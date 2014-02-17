@@ -58,8 +58,10 @@
      <Compile Include="Assets\Scripts\MainSceneManager.cs" />
      <Compile Include="Assets\Scripts\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\ParallaxScrolling.cs" />
+     <Compile Include="Assets\Scripts\PlayerAbilityAimer.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
+     <Compile Include="Assets\Scripts\RotatorForManyHierarchies.cs" />
      <Compile Include="Assets\Scripts\TestAnim.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

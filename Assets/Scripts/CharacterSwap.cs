@@ -17,30 +17,46 @@ public class CharacterSwap : MonoBehaviour {
 	private Transform cam;
 	private CameraFollow camFollow;
 
+	private PlayerAbilityAimer pam;
+
 
 	void Awake() {
-
-		//this script will destroy the character and instantiate the next one so we need to tell this new info to the main cam
+	
 		this.cam = Camera.main.transform;
 		this.camFollow = cam.GetComponent<CameraFollow>();
-		//we track current character via an ID
 		this.currentCharacterID = 0;
 	}
 
 	void Start () {
 
-		this.StartCoroutine(CheckSwapChars());
+
 		Vector3 characterPosition = new Vector3(this.cam.position.x, this.cam.position.y, 0);
-		//		this.currentCharacter = Instantiate(this.characters[this.currentCharacterID], characterPosition, Quaternion.identity) as GameObject;
-		this.currentCharacter = ObjectPool.instance.GetObjectForType("Character", true);
+
+		this.currentCharacter = ObjectPool.instance.GetObjectForType(this.characters[0].name, true);
 		this.currentCharacter.transform.position = characterPosition;
+
+//		this.pam = this.currentCharacter.GetComponent<PlayerAbilityAimer>();
+		GetAimerFromNewCharAndStart();
+
+		StartCoroutine(CheckSwapChars());
+	}
+
+	public void GetAimerFromNewCharAndStart() {
+
+		this.pam = this.currentCharacter.GetComponentInChildren<PlayerAbilityAimer>();
+//		Debug.Log (this.pam.name);
+		this.pam.StartCheckAim();
 	}
 
 	IEnumerator CheckSwapChars() {
 
+		yield return new WaitForEndOfFrame();
+
 		float swapRate = 0;
 		while (true) {
+
 			if (Input.GetKeyDown(this.swapKey) && Time.time > swapRate) {
+
 				StartCoroutine(SwapCharacters());
 				swapRate = Time.time + this.timeBeforeNextSwap;
 			}
@@ -55,11 +71,7 @@ public class CharacterSwap : MonoBehaviour {
 
 		this.camFollow.FollowPlayer();
 
-//		this.currentCharacter.renderer.enabled = false;
 		ObjectPool.instance.PoolObject(this.currentCharacter);
-
-//		GameObject swapExplosion = Instantiate(this.explosion, currentCharPosition, Quaternion.identity) as GameObject;		
-
 
 		GameObject swapExplosion = ObjectPool.instance.GetObjectForType ("Player Explosion", true);
 		swapExplosion.transform.position = currentCharPosition;
@@ -68,37 +80,46 @@ public class CharacterSwap : MonoBehaviour {
 
 		yield return new WaitForSeconds(1.25f);
 
-//		Destroy(swapExplosion);
+		this.pam.StopCheckAim();
+
 		ObjectPool.instance.PoolObject(swapExplosion);
 
 		this.currentCharacterID++;
 		GameObject newCurrentChar;
 
 		switch (this.currentCharacterID) {
-//			case 0: newCurrentChar = Instantiate(this.characters[0], currentCharPosition, Quaternion.identity) as GameObject;
+
+			//Activate Ounces, Ashe was out.
 			case 0: newCurrentChar = ObjectPool.instance.GetObjectForType(this.characters[0].name, true);
 			newCurrentChar.transform.position = currentCharPosition;
 			break;
-//			case 1: newCurrentChar = Instantiate(this.characters[1], currentCharPosition, Quaternion.identity) as GameObject;
+
+			//Activate Fraser, Ounces was out.
 			case 1: newCurrentChar = ObjectPool.instance.GetObjectForType(this.characters[1].name, true);
 			newCurrentChar.transform.position = currentCharPosition;
+//			this.pam
 			break;
-//			case 2: newCurrentChar = Instantiate(this.characters[2], currentCharPosition, Quaternion.identity) as GameObject;
+
+			//Activate Ashe, Fraser was out.
 			case 2: newCurrentChar = ObjectPool.instance.GetObjectForType(this.characters[2].name, true);
 			newCurrentChar.transform.position = currentCharPosition;
 			break;
+
+			//Activate Ounces, Ashe was out.
 			default: this.currentCharacterID = 0;
-//			newCurrentChar = Instantiate(this.characters[0], currentCharPosition, Quaternion.identity) as GameObject;
 			newCurrentChar = ObjectPool.instance.GetObjectForType(this.characters[0].name, true);
 			newCurrentChar.transform.position = currentCharPosition;
 			break;
 		}
 
-//		yield return StartCoroutine(this.camFollow.SetNewPlayer(newCurrentChar.name));
 		this.camFollow.SetNewPlayer(newCurrentChar.name);
 		this.camFollow.FollowPlayer();
 
-//		Destroy(this.currentCharacter);
 		this.currentCharacter = GameObject.Find(newCurrentChar.name);
+//		this.currentCharacter = this.characters[this.currentCharacterID];
+//		this.currentCharacter.transform.position = currentCharPosition;
+//		Debug.Log("Current char: " + this.currentCharacter + " current char ID: " + this.currentCharacterID);
+		GetAimerFromNewCharAndStart();
+
 	}
 }
