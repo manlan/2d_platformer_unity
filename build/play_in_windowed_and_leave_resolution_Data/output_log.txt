@@ -1,0 +1,17 @@
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.1422]
+    Renderer: NVIDIA GeForce GTX 660M
+    Vendor:   NVIDIA
+    VRAM:     1994 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\very_stronk\Dropbox\code\Unity\projects\personal_test_project\build\play_in_windowed_and_leave_resolution_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\very_stronk\Dropbox\code\Unity\projects\personal_test_project\build\play_in_windowed_and_leave_resolution_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\very_stronk\Dropbox\code\Unity\projects\personal_test_project\build\play_in_windowed_and_leave_resolution_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\very_stronk\Dropbox\code\Unity\projects\personal_test_project\build\play_in_windowed_and_leave_resolution_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.054 seconds
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.

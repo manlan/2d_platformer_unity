@@ -3,11 +3,9 @@ using System.Collections;
 
 public class PlayerAbilityAimer : MonoBehaviour
 {
-	public Vector3 offset;			// The offset at which the Health Bar follows the player.
 	public string aimButtonName;
 	public float speed;
-	
-//	private Transform player;		// Reference to the player.
+	public float timeBeforeNextAim;
 
 	private bool isVertical = false;
 	private bool isHorizontal = false;
@@ -29,39 +27,36 @@ public class PlayerAbilityAimer : MonoBehaviour
 //			Debug.Log ("This aimbar color in the CheckAim:" + this.aimBar.color.a);
 			if (Input.GetButton(this.aimButtonName)) {
 
+				RenderOnAndOpaque();
 				Aimer();
-//				StartCoroutine(FadeOut(1f, 0f));
 			}
 
 			if (Input.GetButtonUp(this.aimButtonName)) {
 
-				StartCoroutine(FadeOut(0f, 2f));
-
+				StartCoroutine(FadeOut(0f, .5f));
+				yield return new WaitForSeconds(.5f);
+				ResetRotation();
+				RenderOff();
+				yield return new WaitForSeconds(this.timeBeforeNextAim);
 			}
-
 			yield return null;
 		}
-
-//		Debug.Log("Test");
 	}
 
-	IEnumerator FadeOut(float aValue, float aTime)
-	{
-		float alpha = transform.renderer.material.color.a;
-		for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
-		{
+	IEnumerator FadeOut(float aValue, float aTime) {
+
+		float alpha = this.transform.renderer.material.color.a;
+
+		for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime){
+
 			Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha,aValue,t));
 			transform.renderer.material.color = newColor;
 			yield return null;
 		}
-		ResetRotation();
+
 	}
 	
 	void Aimer () {
-
-		this.renderer.enabled = true;
-		Color opaqueColour = new Color(renderer.material.color.r, renderer.material.color.g, renderer.material.color.b, 1f);
-		this.renderer.material.color = opaqueColour;
 
 		if (this.transform.eulerAngles.z <= 100 && !isVertical) {
 
@@ -85,20 +80,38 @@ public class PlayerAbilityAimer : MonoBehaviour
 		}
 	}
 
+	void RenderOnAndOpaque() {
+
+		this.renderer.enabled = true;
+		Color opaqueColour = new Color(renderer.material.color.r, renderer.material.color.g, renderer.material.color.b, 1f);
+		
+		this.renderer.material.color = opaqueColour;
+	} 
+
+	void RenderOff() {
+		
+		this.renderer.enabled = false;
+	} 
+	
 	void ResetRotation() {
 
 		this.transform.eulerAngles = new Vector3(0, 0, 0);
+		this.isVertical = false;
+		this.isHorizontal = false;
 	}
 
 
-	public void StartCheckAim() {
+	public void StartCheckAimAndReset() {
 
 		ResetRotation();
+		RenderOff();
 		StartCoroutine("CheckAim");
 	}
 
-	public void StopCheckAim() {
+	public void StopCheckAimAndReset() {
 
+		ResetRotation();
+		RenderOff();
 		StopCoroutine("CheckAim");
 	}
 }

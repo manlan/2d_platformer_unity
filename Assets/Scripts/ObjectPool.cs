@@ -22,7 +22,7 @@ public class ObjectPool : MonoBehaviour {
 	// The container object that we will keep unused pooled objects so we dont clog up the editor with objects.
 
 	protected GameObject containerObject;
-
+	
 	void Awake () {	
 
 		instance = this;

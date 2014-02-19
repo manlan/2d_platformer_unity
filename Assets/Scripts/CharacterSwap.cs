@@ -45,7 +45,7 @@ public class CharacterSwap : MonoBehaviour {
 
 		this.pam = this.currentCharacter.GetComponentInChildren<PlayerAbilityAimer>();
 //		Debug.Log (this.pam.name);
-		this.pam.StartCheckAim();
+		this.pam.StartCheckAimAndReset();
 	}
 
 	IEnumerator CheckSwapChars() {
@@ -80,7 +80,7 @@ public class CharacterSwap : MonoBehaviour {
 
 		yield return new WaitForSeconds(1.25f);
 
-		this.pam.StopCheckAim();
+		this.pam.StopCheckAimAndReset();
 
 		ObjectPool.instance.PoolObject(swapExplosion);
 
