@@ -61,12 +61,15 @@
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CharacterSwap.cs" />
      <Compile Include="Assets\Scripts\DestroyOnEnterAndRespawn.cs" />
+     <Compile Include="Assets\Scripts\EventManager.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\LinearMoveThenDestroy.cs" />
      <Compile Include="Assets\Scripts\MainSceneManager.cs" />
      <Compile Include="Assets\Scripts\ObjectPool.cs" />
+     <Compile Include="Assets\Scripts\OuncesAbility.cs" />
      <Compile Include="Assets\Scripts\OuncesControl.cs" />
      <Compile Include="Assets\Scripts\ParallaxScrolling.cs" />
+     <Compile Include="Assets\Scripts\PlayerAbility.cs" />
      <Compile Include="Assets\Scripts\PlayerAbilityAimer.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />

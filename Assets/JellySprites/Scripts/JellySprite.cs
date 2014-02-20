@@ -1427,7 +1427,7 @@ public abstract class JellySprite : MonoBehaviour
 				if(referencePoint.Body2D)
 				{
 					referencePoint.Body2D.AddForce(force);
-//					referencePoint.Body2D.v
+
 				}
 				
 				if(referencePoint.Body3D)

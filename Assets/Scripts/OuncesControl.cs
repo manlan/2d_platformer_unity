@@ -66,9 +66,9 @@ public class OuncesControl : MonoBehaviour
 		Vector2 actualMoveForce = staticForce * hInput * this.moveForce;
 //		Vector2 v2Position = new Vector2(-10,-10);
 
-		this.jellySprite.AddForceAndClampVelocity(actualMoveForce, this.maxSpeed);
+		this.jellySprite.AddForceAndClampVelocity(new Vector2(actualMoveForce.x, Mathf.Abs (actualMoveForce.y)), this.maxSpeed);
 
-		Debug.Log ("hInput: " + hInput + " staticForce: " + staticForce + " Actual Move Force: " + actualMoveForce);
+//		Debug.Log ("hInput: " + hInput + " staticForce: " + staticForce + " Actual Move Force: " + actualMoveForce);
 
 
 		
@@ -80,17 +80,17 @@ public class OuncesControl : MonoBehaviour
 		// If the input is moving the player right and the player is facing left...
 		if(hInput > 0 && !facingRight) {
 			// ... flip the player.
-//			Flip();
-			this.jellySprite.SetFlipHorizontal(false);
+			Flip();
+//			this.jellySprite.SetFlipHorizontal(false);
 
-		this.facingRight = !this.facingRight;
+//		this.facingRight = !this.facingRight;
 		}
 		// Otherwise if the input is moving the player left and the player is facing right...
 		else if(hInput < 0 && facingRight) {
 			// ... flip the player.
-//			Flip();
-			this.jellySprite.SetFlipHorizontal(true);
-			this.facingRight = !this.facingRight;
+			Flip();
+//			this.jellySprite.SetFlipHorizontal(true);
+//			this.facingRight = !this.facingRight;
 		}
 		
 		// If the player should jump...

@@ -7,8 +7,11 @@ public class PlayerAbilityAimer : MonoBehaviour
 	public float speed;
 	public float timeBeforeNextAim;
 
+
+
 	private bool isVertical = false;
 	private bool isHorizontal = false;
+	private float rotatedBy;
 
 	void Start () {
  		
@@ -23,7 +26,7 @@ public class PlayerAbilityAimer : MonoBehaviour
 //		Debug.Log ("it's active before the while " + this.gameObject.activeInHierarchy);
 
 		while (true) {
-
+//			Debug.Log (this.transform.root.localScale.x > 0);
 //			Debug.Log ("This aimbar color in the CheckAim:" + this.aimBar.color.a);
 			if (Input.GetButton(this.aimButtonName)) {
 
@@ -34,7 +37,9 @@ public class PlayerAbilityAimer : MonoBehaviour
 			if (Input.GetButtonUp(this.aimButtonName)) {
 
 				StartCoroutine(FadeOut(0f, .5f));
-				yield return new WaitForSeconds(.5f);
+				yield return new WaitForSeconds(.1f);
+
+				StoreLocation();
 				ResetRotation();
 				RenderOff();
 				yield return new WaitForSeconds(this.timeBeforeNextAim);
@@ -92,7 +97,15 @@ public class PlayerAbilityAimer : MonoBehaviour
 		
 		this.renderer.enabled = false;
 	} 
-	
+
+	void StoreLocation() {
+
+		this.rotatedBy = this.transform.eulerAngles.z;
+		EventManager.NewAimedPosition(this.rotatedBy, this.transform.root.localScale.x > 0);
+//		Debug.Log ("z rotation angles are: " + this.rotatedBy + " and z euler angles are: " + this.transform.eulerAngles.z);
+		
+	}
+
 	void ResetRotation() {
 
 		this.transform.eulerAngles = new Vector3(0, 0, 0);
@@ -103,6 +116,7 @@ public class PlayerAbilityAimer : MonoBehaviour
 
 	public void StartCheckAimAndReset() {
 
+//		EventManager.FireAtAimedPosition += StoreLocation;
 		ResetRotation();
 		RenderOff();
 		StartCoroutine("CheckAim");
@@ -110,6 +124,7 @@ public class PlayerAbilityAimer : MonoBehaviour
 
 	public void StopCheckAimAndReset() {
 
+//		EventManager.FireAtAimedPosition -= StoreLocation;
 		ResetRotation();
 		RenderOff();
 		StopCoroutine("CheckAim");
