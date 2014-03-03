@@ -51,10 +51,6 @@ public class DestroyOnEnterAndRespawn : MonoBehaviour {
 				}
 			}
 
-
-//			GameObject clone = Instantiate(other.gameObject, spawnVector, Quaternion.identity) as GameObject;
-//			Destroy(other.gameObject);
-
 			ObjectPool.instance.PoolObject(collider.gameObject);
 			GameObject clone = ObjectPool.instance.GetObjectForType(collider.gameObject.name, true);
 			clone.transform.position = spawnVector;

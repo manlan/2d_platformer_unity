@@ -46,7 +46,8 @@ public class CameraFollow : MonoBehaviour
 
 				TrackPlayer(); 	
 			}
-			yield return null;
+			yield return new WaitForFixedUpdate();
+//			yield return null;
 		}
 	}
 

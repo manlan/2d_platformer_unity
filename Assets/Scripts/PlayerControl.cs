@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -11,51 +12,121 @@ public class PlayerControl : MonoBehaviour
 
 	public float moveForce = 365f;			// Amount of force added to move the player left and right.
 	public float maxSpeed = 5f;				// The fastest the player can travel in the x axis.
-//	public AudioClip[] jumpClips;			// Array of clips for when the player jumps.
 	public float jumpForce = 1000f;			// Amount of force added when the player jumps.
-//	public AudioClip[] taunts;				// Array of clips for when the player taunts.
-//	public float tauntProbability = 50f;	// Chance of a taunt happening.
-//	public float tauntDelay = 1f;			// Delay for when the taunt should happen.
+	public float playerWidth = 1f;
+	public Vector2 wallJumpForce = Vector2.zero;
 
-
-//	private int tauntIndex;					// The index of the taunts array indicating the most recent taunt.
 	private Transform groundCheck;			// A position marking where to check if the player is grounded.
 	private bool grounded = false;			// Whether or not the player is grounded.
 	private Animator anim;					// Reference to the player's animator component.
 
+	private bool wallJump = false;
+	private bool canWallJump = false;
+	private float canWallJumpTime = 0f;
+	private List<Vector2> rays;
+	private bool nullHVelocity = false;
+	private bool facingRightUponWallHit;
+//	private List<RaycastHit2D> wallHits;
 
-	void Awake()
-	{
-		// Setting up references.
+
+	void Awake() {
+
 		groundCheck = transform.Find("groundCheck");
+
 		anim = GetComponent<Animator>();
 	}
 
+	void Start() {
 
-	void Update()
-	{
+//		this.wallCheckRay = new Ray2D(this.transform.position, Vector2.right);
+//		this.rigidPlayer = this.rigidbody2D;
+		this.rays = new List<Vector2>(new Vector2[] 
+		                                       {new Vector2(1,0),new Vector2(1,1),new Vector2(0,1),new Vector2(-1,1),new Vector2(-1,0)});
+
+//		this.wallHits = new List<RaycastHit2D>(5);
+		}
+
+	void Update() {
+
 		// The player is grounded if a linecast to the groundcheck position hits anything on the ground layer.
-		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
+		this.grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
 
 		// If the jump button is pressed and the player is grounded then the player should jump.
-		if(Input.GetButtonDown("Jump") && grounded)
-			jump = true;
+		if(Input.GetButtonDown("Jump") && grounded) {
+
+			this.jump = true;
+		}
+
+		if (Time.time - this.canWallJumpTime > 0.25f) {
+
+			this.canWallJump = false;
+			this.nullHVelocity = false;
+		}
+
+		if (Input.GetButtonDown("Jump") && this.canWallJump) {
+
+			this.wallJump = true;
+		}
+
+//		Debug.Log ("WallJump: " + this.wallJump + " CanWallJump: " + this.canWallJump);
 	}
+	
+	void FixedUpdate ()	{
+	
+//		Vector2 rayDirection = new Vector2(1f, 0f);
 
 
-	void FixedUpdate ()
-	{
-		// Cache the horizontal input.
+
 		float h = Input.GetAxis("Horizontal");
 
-//		Debug.Log (h);
+//		if (!this.facingRight) rayDirection *= -1;
+
+		for( int i = 0; i < this.rays.Count; i++) { 
+
+//			Debug.Log(this.rays.Count);
+			//vector2 direction of current ray
+			Vector2 currentRay = this.rays[i];
+			RaycastHit2D currentRayCast = Physics2D.Raycast(this.transform.position, currentRay, this.playerWidth, 1 << LayerMask.NameToLayer("Wall"));
+//			this.wallHits.Add(currentRayCast); 
+
+			Vector3 endLine = this.transform.position + (new Vector3(currentRay.x, currentRay.y, this.transform.position.z));
+			Debug.DrawLine(this.transform.position, endLine, Color.red, 1.5f);
+
+			if (currentRayCast) {
+
+				this.facingRightUponWallHit = this.facingRight;
+
+				if (!this.grounded) {
+					
+					this.canWallJump = true;
+					this.canWallJumpTime = Time.time;
+					if (facingRightUponWallHit == this.facingRight) this.nullHVelocity = true;
+				}
+				if (this.grounded) {
+
+					this.canWallJump = false;
+				}
+
+				Debug.Log ("facingRightUponWallHit: " + facingRightUponWallHit + " facingRight: " + this.facingRight + " nullHVel: " + this.nullHVelocity + " grounded: " + this.grounded);
+			}
+
+		}
+
+		if (h * this.rigidbody2D.velocity.x < this.maxSpeed && !this.nullHVelocity) {
+			
+			this.rigidbody2D.AddForce(Vector2.right * h * this.moveForce);
+		}
+
+
+		
+
+
+
 		// The Speed animator parameter is set to the absolute value of the horizontal input.
 		anim.SetFloat("Speed", Mathf.Abs(h));
 
 		// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
-		if(h * rigidbody2D.velocity.x < maxSpeed)
-			// ... add a force to the player.
-			rigidbody2D.AddForce(Vector2.right * h * moveForce);
+
 
 		// If the player's horizontal velocity is greater than the maxSpeed...
 		if(Mathf.Abs(rigidbody2D.velocity.x) > maxSpeed)
@@ -72,14 +143,9 @@ public class PlayerControl : MonoBehaviour
 			Flip();
 
 		// If the player should jump...
-		if(jump)
-		{
+		if (this.jump) {
 			// Set the Jump animator trigger parameter.
 			anim.SetTrigger("Jump");
-
-			// Play a random jump audio clip.
-//			int i = Random.Range(0, jumpClips.Length);
-//			AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
 
 			// Add a vertical force to the player.
 			rigidbody2D.AddForce(new Vector2(0f, jumpForce));
@@ -87,8 +153,20 @@ public class PlayerControl : MonoBehaviour
 			// Make sure the player can't jump again until the jump conditions from Update are satisfied.
 			jump = false;
 		}
+
+		if (this.wallJump) {
+
+			Vector2 wallJumpForceImpulse = this.wallJumpForce;
+			wallJumpForceImpulse /= Time.fixedDeltaTime;
+
+//			anim.SetTrigger("Jump");
+
+			if (facingRight) this.rigidbody2D.AddForce(new Vector2(wallJumpForceImpulse.x, wallJumpForceImpulse.y));
+			else this.rigidbody2D.AddForce(new Vector2(wallJumpForceImpulse.x * -1, wallJumpForceImpulse.y));
+
+			this.wallJump = false;
+		}
 	}
-	
 	
 	void Flip ()
 	{
@@ -100,42 +178,4 @@ public class PlayerControl : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
-
-
-//	public IEnumerator Taunt()
-//	{
-//		// Check the random chance of taunting.
-//		float tauntChance = Random.Range(0f, 100f);
-//		if(tauntChance > tauntProbability)
-//		{
-//			// Wait for tauntDelay number of seconds.
-//			yield return new WaitForSeconds(tauntDelay);
-//
-//			// If there is no clip currently playing.
-//			if(!audio.isPlaying)
-//			{
-//				// Choose a random, but different taunt.
-//				tauntIndex = TauntRandom();
-//
-//				// Play the new taunt.
-//				audio.clip = taunts[tauntIndex];
-//				audio.Play();
-//			}
-//		}
-//	}
-//
-//
-//	int TauntRandom()
-//	{
-//		// Choose a random index of the taunts array.
-//		int i = Random.Range(0, taunts.Length);
-//
-//		// If it's the same as the previous taunt...
-//		if(i == tauntIndex)
-//			// ... try another random taunt.
-//			return TauntRandom();
-//		else
-//			// Otherwise return this index.
-//			return i;
-//	}
 }

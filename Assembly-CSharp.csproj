@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\LinearMoveThenDestroy.cs" />
      <Compile Include="Assets\Scripts\MainSceneManager.cs" />
+     <Compile Include="Assets\Scripts\Misc.cs" />
      <Compile Include="Assets\Scripts\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\OuncesAbility.cs" />
      <Compile Include="Assets\Scripts\OuncesControl.cs" />
@@ -72,6 +73,7 @@
      <Compile Include="Assets\Scripts\PlayerAbility.cs" />
      <Compile Include="Assets\Scripts\PlayerAbilityAimer.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
+     <Compile Include="Assets\Scripts\PlayerControl2.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\RotatorForManyHierarchies.cs" />
      <Compile Include="Assets\Scripts\TestAnim.cs" />

@@ -15,10 +15,6 @@ public class OuncesAbility : PlayerAbility {
 		EventManager.FireAtAimedPosition -= NewAimedPosition;
 	}
 
-//	void FixedUpdate() {
-
-//		NewAimedPosition(
-//	}
 
 	public override void NewAimedPosition(float aNewPosition, bool facingRight) {
 
@@ -39,9 +35,12 @@ public class OuncesAbility : PlayerAbility {
 		float yFinal = y * this.forceStrength; //* Mathf.Rad2Deg;
 		float xFinal = x * this.forceStrength; //Mathf.Rad2Deg;
 
+		Vector2 preImpuseForce = new Vector2(xFinal, yFinal);
+		preImpuseForce /= Time.fixedDeltaTime;
+
 //		float fourtyFiveDegToRads = 56 * Mathf.Deg2Rad;
 
-		this.jellySprite.AddForce(new Vector2(xFinal, yFinal));
+		this.jellySprite.AddForce(preImpuseForce);
 //		Debug.Log ("xFinal: " + xFinal + " yFinal: " + yFinal);
 //		Debug.Log ("z euler we feed is: " + aNewPosition);
 //		Debug.Log ("cos56: " + Mathf.Sin(56 * Mathf.Deg2Rad) + " sin56: " + Mathf.Sin (56) + " Sin56*degToRad: " + (Mathf.Sin (56)) * (Mathf.Rad2Deg));
